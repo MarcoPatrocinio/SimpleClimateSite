@@ -1,0 +1,32 @@
+.air_info_content{
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 0.5rem;
+    border-bottom: 1px solid black;
+}
+.air_info_img{
+    padding: 0.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    width: 40%;
+}
+.air_info_value{
+    align-self: center;
+}
+
+.el-rating{
+    padding: 1rem;
+    text-align: center;
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    display: flex;
+    place-items: center;
+    opacity: 0.8;
+}

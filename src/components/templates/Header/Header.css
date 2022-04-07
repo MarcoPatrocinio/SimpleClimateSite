@@ -1,0 +1,105 @@
+.header-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-content: center;
+    gap: 5px;
+    padding: 1rem;
+    background: rgba(75, 75, 75, 0.3);
+    grid-template-areas: 'n header-middle header-right';
+    max-height: 40px;
+}
+
+.header-middle{
+    grid-area: header-middle;
+    display: flex;
+    justify-content: center;
+}
+
+.header-right{
+    grid-area: header-right;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.nav-element{
+    text-decoration: none;
+    color: white;
+    transition: color ease-in .2s;
+}
+.nav-element:hover{
+    color: black;
+}
+
+.header-right{
+    grid-area: header-right;
+    display: flex;
+    justify-content: center;
+}
+.switch-view{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 0.5rem;
+}
+
+.switch-view input{
+    margin: 0;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+    min-width: 2.5rem;
+    min-height: 1rem;
+    appearance: none;
+    -webkit-appearance: none;
+    background-size: contain;
+    border: 1px solid rgba(0,0,0,.25);
+    border-radius: 25px;
+    background-color: #fff;
+    transition: background-position ease-in-out 0.2s;
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23000'/%3e%3c/svg%3e");
+}
+
+.switch-view input:checked{
+    background-color: black;
+    background-position: right center;
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'%3e%3ccircle r='3' fill='%23fff'/%3e%3c/svg%3e");
+}
+
+
+.initial-search{
+    height: 3em;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.initial-search>input{
+    height: 10px;
+    outline: none;
+    padding: 1rem;
+    border-radius: 25px;
+    background-color: #fff;
+    border: 1px solid #fff;
+}
+
+@media (max-width:775px) {
+    .header-content{
+        grid-template-columns: 1fr;
+        grid-template-areas: 'header-right';
+    }
+    
+    .header-middle{
+        display: none;
+    }
+    
+}

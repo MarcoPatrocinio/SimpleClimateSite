@@ -1,0 +1,12 @@
+.Moon-Fase-Show{
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 0.2rem;
+}
+.Moon-Calendar-Content{
+    padding: 0.3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0.4rem;
+}

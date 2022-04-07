@@ -1,0 +1,17 @@
+.Moon_Calendar_Item{
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    border-radius: 5px;
+    padding: 0.75rem;
+    align-items: center;
+    justify-content: space-between;
+    background: rgba(255,255,255, 0.4);
+}
+.Moon_Calendar_Day{
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.Moon_Calendar_Fase{
+    font-size: 0.6rem;
+}

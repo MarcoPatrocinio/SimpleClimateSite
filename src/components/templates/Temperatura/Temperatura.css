@@ -1,0 +1,52 @@
+.temperature-info-content{
+    z-index: 2;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+.temperature-info{
+    padding: 5px;
+    border-bottom: 1px solid dodgerblue;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    align-items: center;
+}
+.temperature-info>div{
+    display: flex;
+    gap: 3px;
+    align-items: center;
+}
+.clima-geral{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.clima-details{
+    display: flex;
+    place-content: center;
+    justify-content: center;
+    gap: 5px;
+}
+.sens_termica{
+    display: block;
+    font-family: 400;
+    font-size: 0.975rem;
+}
+.sun-timer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: fit-content;
+    width: 170px;
+    background-size: cover !important;
+    background-position: 50% 50% !important;
+}
+.sun-icon{
+    padding: 0 2px;
+    margin-left: 20px;
+    max-width: 40px;
+    transition: 1s;
+    border-radius: 25px;
+
+}
