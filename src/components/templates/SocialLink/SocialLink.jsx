@@ -1,8 +1,10 @@
-import './SocialLink.css';
+import "./SocialLink.css";
 
-import React from 'react';
+import React from "react";
 
-export default props =>
-    <a href={props.link}>
-        {props.media}{props.name}
-    </a>
+export default (props) => (
+  <a href={props.link}>
+    {props.media}
+    {props.name}
+  </a>
+);

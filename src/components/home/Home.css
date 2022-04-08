@@ -1,78 +1,77 @@
-.inicio-content{
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    min-width: 100%;
+.inicio-content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  min-width: 100%;
 }
 /* DEIXAR DE NOITE COM A COR DO FUNDO DOS BOX PRETA TRANSPARENTE COM AS CORES BRANCAS, T+MUDAR VENDO PARA BRANCO*/
-.temperature{
-    grid-area: temperature;
+.temperature {
+  grid-area: temperature;
 }
 
-.active-weather-icon{
-    size: 2rem;
+.active-weather-icon {
+  size: 2rem;
 }
-.location{
-    color: white;
-    grid-area: location;
-    display: flex;
-    flex-direction: column;
-    place-content: center;
-}
-
-.wind{
-    grid-area: wind;
+.location {
+  color: white;
+  grid-area: location;
+  display: flex;
+  flex-direction: column;
+  place-content: center;
 }
 
-.other{
-    grid-area: other;
+.wind {
+  grid-area: wind;
 }
 
-.informacoes-content{
-    text-align: center;
-    display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-auto-rows: 1fr;
-    gap: 0.5rem;
-    padding: 0.75rem;
-    grid-template-areas: 
-    'wind location other'
-    'wind temperature other';
+.other {
+  grid-area: other;
 }
 
-
-.weather-mini{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.informacoes-content {
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-auto-rows: 1fr;
+  gap: 0.5rem;
+  padding: 0.75rem;
+  grid-template-areas:
+    "wind location other"
+    "wind temperature other";
 }
 
-.cards-inicio-informacoes{
-    padding: 1rem;
-    text-align: center;
-    border-radius: 3px;
-    background-color: rgba(255, 255, 255, 0.5);
-    color: black;
-}
- 
-.location-name{
-    font-size: 1.8rem;
-    padding: 0.4rem;
-    margin: 0;
+.weather-mini {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.location-description{
-    font-size: 0.7rem;
-    margin: 10px 0;
+.cards-inicio-informacoes {
+  padding: 1rem;
+  text-align: center;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: black;
+}
+
+.location-name {
+  font-size: 1.8rem;
+  padding: 0.4rem;
+  margin: 0;
+}
+
+.location-description {
+  font-size: 0.7rem;
+  margin: 10px 0;
 }
 
 @media (max-width: 790px) {
-    .informacoes-content{
-        grid-template-columns: 1fr;
-        grid-template-areas: 
-        'location'
-        'temperature'
-        'other'
-        'wind';
-    }
+  .informacoes-content {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "location"
+      "temperature"
+      "other"
+      "wind";
+  }
 }
