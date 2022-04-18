@@ -84,7 +84,7 @@ function getCalendario(size = 30) {
   return arr;
 }
 export default (props) => (
-  <div className="other cards-inicio-informacoes">
+  <div className="moon cards-inicio-informacoes">
     <h2>Fases da Lua</h2>
     <div>
       <h3>Atual</h3>

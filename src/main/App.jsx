@@ -2,10 +2,7 @@ import './App.css';
 
 import React, { Component } from 'react';
 import { BrowserRouter } from 'react-router-dom';
-import { WiMoonNew, WiMoonFull, 
-    WiMoonWaxingCrescent1, WiMoonFirstQuarter,
-    WiMoonWaningGibbous1,WiMoonWaxingGibbous1,
-    WiMoonThirdQuarter,WiMoonWaningCrescent1 } from 'react-icons/wi';
+import { WiMoonNew } from 'react-icons/wi';
 
 import axios from 'axios';
 import Header from '../components/templates/Header/Header';

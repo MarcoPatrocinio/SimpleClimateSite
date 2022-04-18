@@ -1,8 +1,10 @@
 .inicio-content {
   display: flex;
   flex-direction: column;
-  height: 100%;
+  min-height: calc(100vh - 142px);
+  max-height: calc(100vh - 142px);
   min-width: 100%;
+  justify-content: center;
 }
 /* DEIXAR DE NOITE COM A COR DO FUNDO DOS BOX PRETA TRANSPARENTE COM AS CORES BRANCAS, T+MUDAR VENDO PARA BRANCO*/
 .temperature {
@@ -12,9 +14,9 @@
 .active-weather-icon {
   size: 2rem;
 }
-.location {
+.main {
   color: white;
-  grid-area: location;
+  grid-area: main;
   display: flex;
   flex-direction: column;
   place-content: center;
@@ -24,8 +26,8 @@
   grid-area: wind;
 }
 
-.other {
-  grid-area: other;
+.moon {
+  grid-area: moon;
 }
 
 .informacoes-content {
@@ -36,8 +38,8 @@
   gap: 0.5rem;
   padding: 0.75rem;
   grid-template-areas:
-    "wind location other"
-    "wind temperature other";
+    "wind main moon"
+    "wind temperature moon";
 }
 
 .weather-mini {
@@ -69,9 +71,9 @@
   .informacoes-content {
     grid-template-columns: 1fr;
     grid-template-areas:
-      "location"
+      "main"
       "temperature"
-      "other"
+      "moon"
       "wind";
   }
 }

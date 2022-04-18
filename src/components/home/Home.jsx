@@ -11,7 +11,7 @@ export default (props) => (
     <div className="informacoes-content">
       <Weather {...props} />
       <Temperatura {...props} />
-      <Wind {...props} />
+      <Wind wind={props.weather.wind} components={props.air.list[0].components} />
       <Moon />
     </div>
   </div>
