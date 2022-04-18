@@ -1,5 +1,5 @@
 .wind_main{
-    height: 40%;
+    height: max-content;
 }
 .wind_components{
     display: grid;
