@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import './Wind.css';
 import AirInfo from "../AirInfo/AirInfo";
+import { WiWindDeg, WiStrongWind } from 'react-icons/wi'
 let notfound = "https://icon-library.com/images/not-found-icon/not-found-icon-24.jpg"
 export default props =>
 <div className="wind cards-inicio-informacoes">
@@ -9,12 +10,13 @@ export default props =>
     <div>
         <h4>Velocidade e Direção</h4>
         <div className="wind_main">
-            <div>
-                <span>Velocidade: {props.wind.speed}</span> 
+            <div className="wind_main_info">
+                <WiStrongWind size={30}/>
+                <span>Velocidade:&nbsp;{props.wind.speed}&nbsp;Km/h</span> 
             </div>
-            <div>
-                <span>Direção: {props.wind.deg}º</span> 
-                
+            <div className="wind_main_info">
+                <WiWindDeg size={30}/>
+                <span>Direção:&nbsp;{props.wind.deg}º</span> 
             </div>
         </div>
         <hr />

@@ -1,9 +1,18 @@
-.wind_main{
+.wind_main {
     height: max-content;
 }
-.wind_components{
+.wind_components {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 0.25rem;
     padding: 1rem;
+}
+.wind_main_info{
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.5rem;
 }
